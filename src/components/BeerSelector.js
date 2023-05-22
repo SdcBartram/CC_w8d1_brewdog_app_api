@@ -5,6 +5,8 @@ const BeerSelector = ({ beers, onBeerSelected}) => {
     }
 
     return (
+        <>
+        <h4>Now select a beer</h4>
         <select defaultValue="" onChange = { handleChange } >
             <option value="" disabled> Choose a beer </option> {
                 beers.map(beer => {
@@ -15,6 +17,7 @@ const BeerSelector = ({ beers, onBeerSelected}) => {
                 })
             }
         </select>
+        </>
     )
 }
 

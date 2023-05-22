@@ -4,6 +4,7 @@ import BeerSelector from '../components/BeerSelector';
 import BeerDetail from '../components/BeerDetail';
 import FavouriteBeers from '../components/FavouriteBeers';
 import FoodPairingSearch from '../components/FoodPairingSearch';
+import './BrewdogContainer.css';
 
 const BrewdogContainer = () => {
 
@@ -47,13 +48,14 @@ const BrewdogContainer = () => {
     
 
     return (
-        <>
-            <h2>GREAT BEER THAT'S GREAT FOR THE PLANET</h2>
+        <main className="BrewdogContainer">
+    
             {/* <BeerSelector beers={beers} onBeerSelected={handleBeerSelected} />
             {selectedBeer ? <BeerDetail beer={selectedBeer} /> : null}
             <Beer beer={selectedBeer} onFavouriteToggle={handleFavouriteToggle} /> */}
-            <h3>What are you eating?</h3>
+            <h3>Let us suggest a beer to go with your meal. What are you eating?</h3>
             <FoodPairingSearch onSearch={handleFoodSearch} />
+            
             <BeerSelector
                 beers={filteredBeers.length > 0 ? filteredBeers : beers}
                 onBeerSelected={handleBeerSelected}
@@ -66,7 +68,7 @@ const BrewdogContainer = () => {
                 ) : null}
                 <FavouriteBeers beers={beers} onBeerSelected={handleBeerSelected}/>
                   
-            </>
+            </main>
     )
 }
 
