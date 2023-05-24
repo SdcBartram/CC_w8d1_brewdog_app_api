@@ -74,4 +74,26 @@ footer {
   background-color: #33354A;
   color: white;
 }
+/* 
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #33354A;
+  color: white;
+} */
 
+.NavBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #33354A;
+  color: white;
+}
+
+main {
+  background-color: #20C1BD;
+  color: #33354A;
+}

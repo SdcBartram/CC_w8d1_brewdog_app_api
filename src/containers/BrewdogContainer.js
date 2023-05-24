@@ -6,6 +6,7 @@ import FavouriteBeers from '../components/FavouriteBeers';
 import FoodPairingSearch from '../components/FoodPairingSearch';
 import './BrewdogContainer.css';
 
+
 const BrewdogContainer = () => {
 
     const [beers, setBeers] = useState([])
@@ -53,6 +54,7 @@ const BrewdogContainer = () => {
             {/* <BeerSelector beers={beers} onBeerSelected={handleBeerSelected} />
             {selectedBeer ? <BeerDetail beer={selectedBeer} /> : null}
             <Beer beer={selectedBeer} onFavouriteToggle={handleFavouriteToggle} /> */}
+            
             <h3>Let us suggest a beer to go with your meal. What are you eating?</h3>
             <FoodPairingSearch onSearch={handleFoodSearch} />
             
